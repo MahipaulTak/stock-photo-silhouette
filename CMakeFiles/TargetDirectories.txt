@@ -1,0 +1,3 @@
+/Users/mahipaultak/GitHub/stock photo silhouette/CMakeFiles/edit_cache.dir
+/Users/mahipaultak/GitHub/stock photo silhouette/CMakeFiles/rebuild_cache.dir
+/Users/mahipaultak/GitHub/stock photo silhouette/CMakeFiles/stocktho.dir
