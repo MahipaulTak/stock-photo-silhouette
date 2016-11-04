@@ -28,16 +28,16 @@ int main(int argc, char ** argv) {
      Before drawing all contours you could also decide
      to only draw the contour of the largest connected component
      found. Here's some commented out code how to do that:
-    */
 
-//    vector<double> areas(contours.size());
-//    for(int i = 0; i < contours.size(); i++)
-//        areas[i] = contourArea(Mat(contours[i]));
-//    double max;
-//    Point maxPosition;
-//    minMaxLoc(Mat(areas),0,&max,0,&maxPosition);
-//    drawContours(mask, contours, maxPosition.y, Scalar(1), CV_FILLED);
 
+    vector<double> areas(contours.size());
+    for(int i = 0; i < contours.size(); i++)
+        areas[i] = contourArea(Mat(contours[i]));
+    double max;
+    Point maxPosition;
+    minMaxLoc(Mat(areas),0,&max,0,&maxPosition);
+    drawContours(mask, contours, maxPosition.y, Scalar(1), CV_FILLED);
+  */
     // let's create a new image now
     Mat crop(img0.rows, img0.cols, CV_8UC3);
 
@@ -58,6 +58,6 @@ int main(int argc, char ** argv) {
 
 
 
-    waitKey();
+    waitKey(0);
     return 0;
 }
